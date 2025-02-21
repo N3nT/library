@@ -8,7 +8,37 @@
     <title>Library</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <main class="main">
+            <div class="addBookFormWrapper">
+                <form class="addBookForm">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" class="inputTitle">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" class="inputAuthor">
+                    <label for="year">Year of publish</label>
+                    <input type="number" id="year" class="inputYear">
+                    <label for="status">Status</label>
+                    <select id="status" class="inputStatus">
+                        <option value="Unread" selected>Unread</option>
+                        <option value="Read">Read</option>
+                    </select>
+                </form>
+                <button class="addBookFormSubmit">Add</button>
+            </div>
+            <div class="displayBooksWrapper">
+                <div class="book">
+                    <span>ID</span>
+                    <p>Title</p>
+                    <p>Author</p>
+                    <p>Publish Year</p>
+                    <p>Status</p>
+                    <p></p>
+                </div>
+                <div class="displayBooks"></div>
+            </div>
+        </main>
+    </div>
     <script src="script.js" defer></script>
 </body>
 </html>
